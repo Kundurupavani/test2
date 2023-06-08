@@ -1,0 +1,84 @@
+{
+  "id": "7a78ff77-2090-44d9-8982-f4538aecf4f6",
+  "name": "DI_BaseApp",
+  "publisher": "DI",
+  "version": "22.0.0.3",
+  "brief": "",
+  "description": "",
+  "privacyStatement": "",
+  "EULA": "",
+  "help": "",
+  "url": "",
+  "logo": "",
+  "dependencies": [
+    {
+      "name": "India Reports",
+      "id": "050f6146-bffd-40de-942c-d0dd510ec20f",
+      "version": "21.0.46256.46853",
+      "publisher": "Microsoft"
+      
+    },
+    {
+      "name": "India Gate Entry",
+      "id": "2dc39818-e0f0-42b6-99eb-ba29dc5f4102",
+      "version": "21.0.46256.46853",
+      "publisher": "Microsoft"
+    },
+    {
+      "name": "India GST",
+      "id": "db643212-b7fb-4dd4-b5a8-cb44ac714461",
+      "version": "21.0.46256.46853",
+      "publisher": "Microsoft"
+    },
+    {
+      "name": "India Tax Base",
+      "id": "d3c551dd-5903-4194-b153-04ced9d29a2c",
+      "version": "21.0.46256.46853",
+      "publisher": "Microsoft"
+    },
+    {
+      "name": "India TCS",
+      "id": "eddcf82e-482c-49d1-836b-ad0284f2c5b0",
+      "version": "21.0.46256.46853",
+      "publisher": "Microsoft"
+    },
+    {
+      "name": "India TDS",
+      "id": "eae5779e-7797-4c4c-977e-7516652b7a65",
+      "version": "21.0.46256.46853",
+      "publisher": "Microsoft"
+    },
+    {
+      "name": "India Voucher Interface",
+      "id": "f1d9b696-156b-4251-b542-34e549fa80e9",
+      "version": "21.0.46256.46853",
+      "publisher": "Microsoft"
+    },
+   
+    {
+      "name": "Tax Engine",
+      "id": "c1eafb3f-e397-468e-bdb4-ecc5c317ca00",
+      "version": "21.0.46256.46853",
+      "publisher": "Microsoft"
+    }
+
+  ],
+  "screenshots": [],
+  "platform": "1.0.0.0",
+  "application": "22.0.0.0",
+  "idRanges": [
+    {
+      "from": 50001,
+      "to": 50100
+    }
+  ],
+  "resourceExposurePolicy": {
+    "allowDebugging": true,
+    "allowDownloadingSource": true,
+    "includeSourceInSymbolFile": true
+  },
+  "runtime": "11.0",
+  "features": [
+    "NoImplicitWith"
+  ]
+}
