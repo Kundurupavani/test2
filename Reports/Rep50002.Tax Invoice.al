@@ -327,6 +327,10 @@ report 50002 "Tax Invoice-DI"
                         column(Desc_SalesInvLine; Description)
                         {
                         }
+                        column(Description_2; "Description 2")
+                        {
+
+                        }
                         column(No_SalesInvLine; "No.")
                         {
                         }

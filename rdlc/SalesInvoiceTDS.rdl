@@ -704,6 +704,20 @@
                                         <FontSize>8pt</FontSize>
                                       </Style>
                                     </TextRun>
+                                    <TextRun>
+                                      <Value xml:space="preserve"> </Value>
+                                      <Style>
+                                        <FontFamily>Segoe UI</FontFamily>
+                                        <FontSize>8pt</FontSize>
+                                      </Style>
+                                    </TextRun>
+                                    <TextRun>
+                                      <Value>=Fields!Description_2.Value</Value>
+                                      <Style>
+                                        <FontFamily>Segoe UI</FontFamily>
+                                        <FontSize>8pt</FontSize>
+                                      </Style>
+                                    </TextRun>
                                   </TextRuns>
                                   <Style>
                                     <TextAlign>Left</TextAlign>
@@ -5289,6 +5303,9 @@ End Function</Code>
         </Field>
         <Field Name="Desc_SalesInvLine">
           <DataField>Desc_SalesInvLine</DataField>
+        </Field>
+        <Field Name="Description_2">
+          <DataField>Description_2</DataField>
         </Field>
         <Field Name="No_SalesInvLine">
           <DataField>No_SalesInvLine</DataField>

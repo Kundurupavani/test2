@@ -1216,6 +1216,20 @@
                                     <TextAlign>Left</TextAlign>
                                   </Style>
                                 </Paragraph>
+                                <Paragraph>
+                                  <TextRuns>
+                                    <TextRun>
+                                      <Value />
+                                      <Style>
+                                        <FontFamily>Segoe UI</FontFamily>
+                                        <FontSize>8pt</FontSize>
+                                      </Style>
+                                    </TextRun>
+                                  </TextRuns>
+                                  <Style>
+                                    <TextAlign>Left</TextAlign>
+                                  </Style>
+                                </Paragraph>
                               </Paragraphs>
                               <rd:DefaultName>textbox6</rd:DefaultName>
                               <ZIndex>140</ZIndex>
@@ -1280,6 +1294,34 @@
                                   <TextRuns>
                                     <TextRun>
                                       <Value>=Fields!Desc_SalesInvLine.Value</Value>
+                                      <Style>
+                                        <FontFamily>Segoe UI</FontFamily>
+                                        <FontSize>8pt</FontSize>
+                                      </Style>
+                                    </TextRun>
+                                    <TextRun>
+                                      <Value xml:space="preserve"> </Value>
+                                      <Style>
+                                        <FontFamily>Segoe UI</FontFamily>
+                                        <FontSize>8pt</FontSize>
+                                      </Style>
+                                    </TextRun>
+                                    <TextRun>
+                                      <Value>=Fields!Description_2.Value</Value>
+                                      <Style>
+                                        <FontFamily>Segoe UI</FontFamily>
+                                        <FontSize>8pt</FontSize>
+                                      </Style>
+                                    </TextRun>
+                                  </TextRuns>
+                                  <Style>
+                                    <TextAlign>Left</TextAlign>
+                                  </Style>
+                                </Paragraph>
+                                <Paragraph>
+                                  <TextRuns>
+                                    <TextRun>
+                                      <Value />
                                       <Style>
                                         <FontFamily>Segoe UI</FontFamily>
                                         <FontSize>8pt</FontSize>
@@ -1564,6 +1606,20 @@
                                   <TextRuns>
                                     <TextRun>
                                       <Value>=Fields!ShipmentCaption.Value</Value>
+                                      <Style>
+                                        <FontFamily>Segoe UI</FontFamily>
+                                        <FontSize>8pt</FontSize>
+                                      </Style>
+                                    </TextRun>
+                                  </TextRuns>
+                                  <Style>
+                                    <TextAlign>Left</TextAlign>
+                                  </Style>
+                                </Paragraph>
+                                <Paragraph>
+                                  <TextRuns>
+                                    <TextRun>
+                                      <Value />
                                       <Style>
                                         <FontFamily>Segoe UI</FontFamily>
                                         <FontSize>8pt</FontSize>
@@ -3974,7 +4030,7 @@ Cstr(Fields!Customer_GST_RegistrationNo.Value)
                   </TablixColumns>
                   <TablixRows>
                     <TablixRow>
-                      <Height>0.42333cm</Height>
+                      <Height>0.22461cm</Height>
                       <TablixCells>
                         <TablixCell>
                           <CellContents>
@@ -4066,9 +4122,9 @@ Cstr(Fields!Customer_GST_RegistrationNo.Value)
                     </FilterValues>
                   </Filter>
                 </Filters>
-                <Top>10.41575cm</Top>
+                <Top>10.61447cm</Top>
                 <Left>0.00005cm</Left>
-                <Height>0.42333cm</Height>
+                <Height>0.22461cm</Height>
                 <Width>18.69437cm</Width>
                 <ZIndex>3</ZIndex>
                 <Style>
@@ -5495,6 +5551,9 @@ End Function</Code>
         </Field>
         <Field Name="Desc_SalesInvLine">
           <DataField>Desc_SalesInvLine</DataField>
+        </Field>
+        <Field Name="Description_2">
+          <DataField>Description_2</DataField>
         </Field>
         <Field Name="No_SalesInvLine">
           <DataField>No_SalesInvLine</DataField>
