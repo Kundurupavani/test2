@@ -327,6 +327,10 @@ report 50003 "Sales Invoice-TDS"
                         column(Desc_SalesInvLine; Description)
                         {
                         }
+                        column(Description_2; "Description 2")
+                        {
+
+                        }
                         column(No_SalesInvLine; "No.")
                         {
                         }
