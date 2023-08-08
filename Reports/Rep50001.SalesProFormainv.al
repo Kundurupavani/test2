@@ -24,6 +24,17 @@ report 50001 "Proforma Invoice-DI"
             {
 
             }
+            //DI-047>>
+            column(SGSTAmt; SGSTAmt)
+            {
+            }
+            column(CGSTAmt; CGSTAmt)
+            {
+            }
+            column(IGSTAmt; IGSTAmt)
+            {
+            }
+            //DI-047<<
             column(CompanyEMail; CompanyInformation."E-Mail")
             {
             }
@@ -237,6 +248,10 @@ report 50001 "Proforma Invoice-DI"
                 DataItemLink = "Document Type" = FIELD("Document Type"), "Document No." = FIELD("No.");
                 DataItemLinkReference = Header;
                 DataItemTableView = SORTING("Document No.", "Line No.");
+                column(Line_No; "Line No.")
+                {
+
+                }
                 column(ItemDescription; Description)
                 {
                 }
@@ -289,15 +304,7 @@ report 50001 "Proforma Invoice-DI"
                 {
 
                 }
-                column(SGSTAmt; SGSTAmt)
-                {
-                }
-                column(CGSTAmt; CGSTAmt)
-                {
-                }
-                column(IGSTAmt; IGSTAmt)
-                {
-                }
+
                 column(VATPct; "VAT %")
                 {
                 }
@@ -315,7 +322,7 @@ report 50001 "Proforma Invoice-DI"
                 begin
                     // SNo := 0;
 
-                    GetItemForRec("No.");
+                    //GetItemForRec("No.");
                     OnBeforeLineOnAfterGetRecord(Header, Line);
                     SNo += 1;
                     if IsShipment() then
@@ -355,8 +362,6 @@ report 50001 "Proforma Invoice-DI"
                     TotalAmount := 0;
                     TotalVATAmount := 0;
                     TotalAmountInclVAT := 0;
-                    SetRange(Type, Type::Item);
-
                     OnAfterLineOnPreDataItem(Header, Line);
                 end;
             }
@@ -425,6 +430,7 @@ report 50001 "Proforma Invoice-DI"
     var
         SNo: Integer;
         IGSTAmt: Decimal;
+
         SGSTAmt: Decimal;
         CGSTAmt: Decimal;
         LineSGSTRate: Decimal;
@@ -570,6 +576,7 @@ report 50001 "Proforma Invoice-DI"
                             IGSTAmt += Round(TaxTransactionValue.Amount, GetGSTRoundingPrecision(ComponentName));
                     end;
                 until TaxTransactionValue.Next() = 0;
+
         end;
     end;
 
